@@ -1,0 +1,243 @@
+Slide 3 - What We Do (Caitlin)
+------------------------------
+Very brief intro to Deque
+Key point: we build a11y apps, therefore apps must be Accessible
+Also brief: we work on same team (most of the time), and in same office
+
+
+Slide 4 - Today, we're talking about... (Harris)
+------------------------------------------------
+Brief overview of topics
+Using comobobo as a case study to illustrate our points today
+(b/c complex widget, project we both worked on, etc.)
+
+
+Slide 5 - Framing the Problem (Caitlin)
+-----------------------------------------
+Screenshot: previous multiselect control in Assure.
+Key points:
+  - Context: app is for tracking accessibility bugs, part of apps is bug list. Bug list is filterable
+  - Hard to find filter you want when select list is big (i.e. >10 options)
+  - Hard to know what's selected at a glance (esp. when mult. selections per filter)
+
+
+Slide 6 - Framing the Problem: Existing Comboboxes (Harris)
+-------------------------------------------------------------
+Caveat first: we chose to build our own combobox because we felt it would improve usability, and we were confident we had enough a11y knowledge to actually pull it off. We put it off for a long time. Don't built crazy custom widget unless you absolutely have to!!!
+Lots of options out there - we looked at a ton.
+Problem for us: no options were completely accessible (or even close)
+  - Visual a11y not great for most
+  - Keyboard a11y: some, not all
+  - Screen reader a11y: almost none
+
+
+Slide 7 - A11y === difficult (Caitlin / Harris)
+--------------------------------------------------
+Build on previous slide - lots of finicky things to get right with a11y.
+Note: hopefully we're preaching to the choir wrt to collaborating with teammates
+Caveat: we work for an a11y company and eat/sleep/breathe a11y
+Plug shift left - way better to do a11y when designing / developing rather than later on - better opportunity to get it right b/c more people involved
+Gauge audience - designers? developers? how many devs work directly with designers and vice versa?
+
+
+Slide 9 - Designer + Developer (Caitlin / Harris)
+--------------------------------------------------
+Different kinds of work, same goal.
+Designer - concerned with interactions, visuals, info architecture, etc.
+Developer - concerned with well-formed code, data architecture, dependencies, etc.
+Brief example:
+  - Harris knows a lot about ARIA, Caitlin doesn't (in part b/c she doesn't code)
+  - Caitlin's job to choose colors, generally, so she's in charge of good color contrast
+
+
+Slide 10 - who, where, what, when, why (Caitlin)
+----------------------------------------------------
+Details around:
+  - what design review is
+  - who attends (or should attend)
+  - why it happens
+  - when it happens (how often)
+  - where it happens
+
+
+Slide 11 - Design Responsibilities (Caitlin)
+----------------------------------------------
+Key point: lots in a11y can be done before devs are even involved
+
+
+Slide 12 - Development Responsibilities (Harris)
+---------------------------------------------------
+Key point: main dev responsibility is implementation. Designers who don't do development work may not be aware of implications of designs
+
+
+Slide 13 - Showing selected filters: before (Caitlin)
+-----------------------------------------------------
+Overview of how Assure Classic handled this (i.e. it didn't really)
+Review of problems:
+  - hard to tell when filters active
+  - hard to deselect specific filter (have to find in list)
+
+
+Slide 14 - Showing selected filters: first review (Caitlin)
+------------------------------------------------------------
+First solution was to show selected panel as part of widget
+Problems: have to expand to see, takes up space.
+Big a11y issues pointed out by devs:
+  - where does it show in reading order? focus order? How do screen readers get to it?
+  - if not focusable, how does it make it easier to deselect?
+Too many problems, so scrapped idea
+
+
+Slide 15 - Showing selected filters: second review (Caitlin)
+------------------------------------------------------------
+Caitlin went back to drawing board and tried a different pattern - active filter pills in different section
+Lots of questions came up in design review:
+  - Focus order
+  - What do pills read to screen readers? (Alt text on icon)
+  - What happens to keyboard focus / SR readout when last pill is dismissed?
+  - What happens when "clear all" is activated? To focus, etc.
+Worked through a lot of these questions in real time as part of design review.
+Caitlin took notes of decisions, then added final decisions as wireframe annotations
+
+
+Slide 16 - Design Annotations (Caitlin)
+-----------------------------------------
+Segue from previous: hard to communicate everything in a picture
+
+
+Slide 18 - Example without Annotations (Caitlin)
+------------------------------------------------
+Picture communications a lot: placement of elements, styles, etc.
+But only shows one state. There are hidden details
+
+
+Slide 19 - Example with annotations (Caitlin)
+------------------------------------------------
+All annotations affect accessibility. Know what to note by asking questions:
+- What happens to focus when state changes?
+- What needs alt text?
+- What kind of element should it be coded as?
+- Talking about specs is great but everyone will forget if you don't write them down
+
+
+Slide 20 - Annotations === documentation (Caitlin)
+---------------------------------------------------
+Annotations - only one form of documentation.
+Multiple purposes:
+- Devs know what to develop (main)
+- QA knows what to test
+- Record of decisions made (in case have to go back to it later)
+- Other team members can get up to speed
+
+
+Slide 21 - Annotations Locations (Caitlin / Harris)
+-----------------------------------------------------
+Key: make sure they exist where other people can see them.
+What we do: annotations on design comps, comps attached to Jira tickets, additional annotations as Jira comments or descriptions
+Note: you WILL forget stuff, to time consuming to update comps - comments in JIRA/slack are quicker / more practical
+
+
+Slide 22 - Annotating accessibility features (Caitlin / Harris)
+--------------------------------------------------------------------
+Annotations should be answers to questions about the gaps in the design.
+For a11y, think about how designs will be represented in code.
+Good code = good a11y
+- These questions should be asked during design review
+
+
+Slide 23 - Prototyping (Harris)
+---------------------------------
+Title slide - we use many different types of prototyping at various stages of software development
+
+
+Slide 24 - Types of prototypes (Harris)
+------------------------------------------
+key: all are useful for different things
+
+
+Slide 25 - Interactive Prototype Case Study: Combobo  (Harris)
+------------------------------------------------------------------
+No that's not a typo, we named our module "Combobo"...
+key: we decided it would be extremely beneficial to use an interactive prototype
+
+
+Slide 26 - Combobo  (Harris)
+------------------------------
+key: its open source, it's awesome, and it sped up the development process
+
+
+Slide 27 - Example combobo instantiation (Harris)
+---------------------------------------------------
+key: there are TONS of configuration options which makes it super flexible
+
+Slide 28 - { useLiveRegion: true } (Harris)
+---------------------------------------------
+key: we performed a TON of AT/browser tests, due to inconsistent results we defaulted to the one piece of common ground: live regions
+
+Slide 29 - { activeClass: "active", selectedClass: "selected" } (Caitlin)
+---------------------------------------------------------------------------
+Didn't think about this when designing - Harris brought it up later. We whiteboarded solution ideas and then decided on route.
+Had to do different focus styles for product than for open source version, b/c product had existing focus styles (outline)
+
+
+Slide 30 - Combobo events / methods (code sample) (Harris)
+-------------------------------------------------------------
+key: exposing public methods and events makes integrating combobo into your app easy!
+
+
+Slide 32 - Combobo Demo - Single Select (Harris)
+--------------------------------------------------
+key: turn VO on to show off some awesome a11y features!
+
+
+Slide 33 - Combobo Demo - Multiselect (Harris)
+------------------------------------------------
+key: showcase multiselect features (also show the no results text by typing "asdfasdfas")
+
+Slide 34 - Usability Testing (Caitlin)
+-----------------------------------------
+Segue: the awesome thing about making a coded prototype is we could do usability testing on it
+
+
+Slide 36 - Targeted usability testing (Caitlin)
+-------------------------------------------------------
+Usability testing = lots of time + money. Got to pick and choose what to test.
+Test the things that have the highest "unknown" quotient
+Especially the things where you can't even guess at the answers
+
+
+Slide 37 - Want to test with SR users? Code your prototype (Caitlin / Harris)
+-----------------------------------------------------------------------------
+SRs work on top of code - therefore, can't really test without the code.
+Means investing in accessibility early - in prototyping phase! Makes it WAY easier later
+
+
+Slide 38 - How we tested Combobo (Caitlin)
+--------------------------------------------
+Recruited internally b/c we knew we could get SR users AND a11y experts that way (cheating)
+Tested w/in context of application, not prototypes
+Targeted specific questions we had. Specifically: checkboxes normally activated by spacebar, but couldn't have that because ability to type in field still active when traversing checkboxes. Wanted to know if screen reader / keyboard only users were thrown off by that
+Wasn't just UX running show - Harris attended, too, and was able to ask more technical questions that I couldn't
+
+
+Slide 42 - Benefits of pattern libraries
+-------------------------------------------------
+key: pattern libraries are awesome - they have TONS of benefits
+
+Slide 43 - Why isn't Combobo in the pattern library?
+------------------------------------------------------------
+- the first app that consumed it is older than the pattern library and has not adopted the pattern library yet
+- the apple rule (of 3):
+  1st: build it
+  2nd: improve it
+  3rd: add is as a reusable component to the pattern library
+
+
+Second to last slide - plugging Dylan's talk
+----------------------------------------------
+
+
+Last slide - Thanks!
+-----------------------
+Contact info and stuff.
+Also remind everyone to fill out session evaluations (in the AttendeeHub app)
