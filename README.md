@@ -1,10 +1,10 @@
-# Combobo talk slides (for CodeMash and CSUN)
+# Combobo talk slides (CSUN 2018 edition)
 
 ## Installation stuff
 
 ```bash
-$ git clone https://github.com/schne324/combobo-talk-slides.git
-$ cd combobo-talk-slides
+$ git clone https://github.com/schne324/csun-combobo-talk-slides.git
+$ cd csun-combobo-talk-slides
 $ npm install
 $ npm start
 ```
