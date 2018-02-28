@@ -30,8 +30,8 @@ const slides = [
       <div className='logo'>
         <img src={logo} alt='Deque' width={'110'} />
       </div>
-      <h1 className="title-slide">Designers and Developers Working Together - Mass Hysteria!</h1>
-      <h2>(And Accessible Websites!)</h2>
+      <h1 className="title-slide">A Nightmare on HTML Street</h1>
+      <h2>Building Accessible Complex Widgets</h2>
       <div className='by-who'>
         <br/>
         <p>Caitlin Geier and Harris Schneiderman</p>
@@ -57,18 +57,17 @@ const slides = [
   (
     <div>
       <h2 className="large">What We Do</h2>
-      <h3>We work for <strong>Deque Systems</strong>.</h3>
-      <br/>
-      <p>We design and build <strong>web applications</strong> to help <strong>development teams</strong> perform <strong>accessibility testing</strong>.</p>
+      <p>We design and build <strong>web applications</strong> which help <strong>development teams</strong> perform <strong>accessibility testing</strong>.</p>
     </div>
   ),
   (
     <div>
       <h2>{'Today, we\'re talking about:'}</h2>
       <ul>
-        <li>Collaboration</li>
         <li>Comboboxes</li>
-        <li>Being Awesomely Accessible</li>
+        <li>Collaboration</li>
+        <li>Prototyping</li>
+        <li>How much we love ARIA</li>
       </ul>
     </div>
   ),
@@ -96,7 +95,7 @@ const slides = [
   (
     <div>
       <h2 className="title-centered large">Accessibility === difficult</h2>
-      <h3 className="title-centered image-space">Working with teammates === less difficult</h3>
+      <h3 className="title-centered image-space">Collaboration === less difficult</h3>
       <div className="full-image">
         <img className="bottom-aligned-image" src={teamwork} width="500px" alt="" role='presentation' />
       </div>
@@ -104,7 +103,12 @@ const slides = [
   ),
   (
     <div>
-      <h1 className="title-centered">Design Reviews</h1>
+      <h2>(Placeholder: timeline of design / development chart)</h2>
+    </div>
+  ),
+  (
+    <div>
+      <h1 className="title-centered">Phase 1: Design</h1>
     </div>
   ),
   (
@@ -113,23 +117,11 @@ const slides = [
         <img src={codevdesign} alt="" role='presentation' width="600px"/>
       </div>
       <div className="two-col">
-        <h2 className="align-right">Designer</h2>
+        <h2 className="align-right">Design</h2>
       </div>
       <div className="two-col">
-        <h2 className="align-left white-text">Developer</h2>
+        <h2 className="align-left white-text">Development</h2>
       </div>
-    </div>
-  ),
-  (
-    <div>
-      <div className="background-image img-opacity">
-        <img src={question} alt="" role='presentation' width="600px"/>
-      </div>
-      <h2 className="title-centered">What</h2>
-      <h2 className="title-centered">Who</h2>
-      <h2 className="title-centered">Why</h2>
-      <h2 className="title-centered">Where</h2>
-      <h2 className="title-centered">When</h2>
     </div>
   ),
   (
@@ -183,25 +175,7 @@ const slides = [
   ),
   (
     <div>
-      <h1 className="title-centered">Design Annotations</h1>
-    </div>
-  ),
-  (
-    <div>
-      <h2>Annotations allow designers to communicate design details to other team members.</h2>
-    </div>
-  ),
-  (
-    <div>
-      <h3 className="title-offscreen">Design example without annotations</h3>
-      <div className="full-image">
-        <img src={filters2} width="530px" alt="flat design of multi-select filters and pills without annotations" />
-      </div>
-    </div>
-  ),
-  (
-    <div>
-      <h3 className="title-offscreen">Design example with annotations</h3>
+      <h3 className="title-offscreen">Annotations added after second review</h3>
       <div className="full-image">
         <img src={filters2annot} width="530px" alt="same wireframes as previous slide with annotations" />
       </div>
@@ -209,37 +183,11 @@ const slides = [
   ),
   (
     <div>
-      <h2 className="title-centered">Annotations === Documentation</h2>
+      <h2>(Placeholder for another slide or two - more about how designers and devs shouldnt be isolated from each other)</h2>
     </div>
   ),
   (
-    <div>
-      <h2 className="title-centered">Annotation Locations</h2>
-      <ul>
-        <li>Part of design comps</li>
-        <li>Requirements documents</li>
-        <li>Stories (i.e. Jira tickets)</li>
-        <li>Whiteboards</li>
-        <li>Email / Slack</li>
-      </ul>
-    </div>
-  ),
-  (
-    <div>
-      <h2>Annotating Accessibility Features</h2>
-      <strong>Questions to ask:</strong>
-      <ul>
-        <li>Heading level?</li>
-        <li>Which HTML element to use?</li>
-        <li>What&#39;s the alt text?</li>
-        <li>Reading order?</li>
-        <li>Focus order?</li>
-        <li>What happens when...?</li>
-      </ul>
-    </div>
-  ),
-  (
-    <h1>Prototyping</h1>
+    <h1>Phase 2: Prototypes</h1>
   ),
   (
     <div>
@@ -326,11 +274,11 @@ combobo
   ),
   (
     <div>
-      <h3>The value in the interactive prototype Combobo</h3>
+      <h3>The value of prototyping</h3>
       <ul>
-        <li>Allow for screen reader testing very early in the process</li>
-        <li>{'Made us ask questions we hadn\'t asked before'}</li>
-        <li>{'Allowed for enhancements to be made without changing our app\'s code'}</li>
+        <li>Screen reader testing early in process</li>
+        <li>{'Brought up new questions'}</li>
+        <li>{'Make enhancements without changing application code'}</li>
       </ul>
     </div>
   ),
@@ -342,7 +290,7 @@ combobo
   ),
   (
     <div>
-      <h1>Usability Testing</h1>
+      <h1>Phase 3: Usability Testing</h1>
     </div>
   ),
   (
@@ -368,6 +316,7 @@ combobo
     <div>
       <h2 className="title-centered">Want to test with screen reader users?<br/><br/>
       Code your prototype.</h2>
+      <p>(image of code in background, white text on top?)</p>
     </div>
   ),
   (
