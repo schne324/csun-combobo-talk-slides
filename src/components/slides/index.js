@@ -126,27 +126,25 @@ const slides = [
   ),
   (
     <div>
-      <h2 className="title-centered">Design Responsibilities</h2>
-      <ul>
-        <li>Color contrast</li>
-        <li>Visible focus</li>
-        <li>Visual page structure</li>
-        <li>Images and alternative text</li>
-        <li>Navigation and consistency</li>
-        <li>Etc.</li>
-      </ul>
-    </div>
-  ),
-  (
-    <div>
-      <h2 className="title-centered">Development Responsibilities</h2>
-      <ul>
-        <li>Semantic code</li>
-        <li>Keyboard operability</li>
-        <li>ARIA (if applicable)</li>
-        <li>Screen reader compatability</li>
-        <li>Etc.</li>
-      </ul>
+      <h2 className="title-centered">Responsibilities in the Design Phase</h2>
+      <div className="two-col">
+        <h3>Designers</h3>
+        <ul>
+          <li>Create artifacts</li>
+          <li>Annotate features</li>
+          <li>Help define requirements</li>
+          <li>Show designs to team!</li>
+        </ul>
+      </div>
+      <div className="two-col">
+        <h3>Developers</h3>
+        <ul>
+          <li>Review designs</li>
+          <li>Research technologies</li>
+          <li>Understand requirements</li>
+          <li>Ask questions!</li>
+        </ul>
+      </div>
     </div>
   ),
   (
@@ -183,7 +181,8 @@ const slides = [
   ),
   (
     <div>
-      <h2>(Placeholder for another slide or two - more about how designers and devs shouldnt be isolated from each other)</h2>
+      <h2>Get developers involved!</h2>
+      <p>being involved earlier means starting development sooner.</p>
     </div>
   ),
   (
@@ -200,12 +199,22 @@ const slides = [
     </div>
   ),
   (
+    <div>
+      <h2>The value of prototyping</h2>
+      <ul>
+        <li>Screen reader testing early in process</li>
+        <li>{'Brought up new questions'}</li>
+        <li>{'Make enhancements without changing application code'}</li>
+      </ul>
+    </div>
+  ),
+  (
     <h2>Interactive Prototype Case Study: Combobo</h2>
   ),
   (
     <div>
       <h3>Combobo</h3>
-      <p>An open source modular / accessible combobox plugin written by yours truly</p>
+      <p>A modular / accessible combobox plugin written by Harris</p>
       <img className='combobo-logo' src={comboboLogo} width='150px' alt='' role='presentation' />
     </div>
   ),
@@ -273,20 +282,22 @@ combobo
     </div>
   ),
   (
-    <div>
-      <h3>The value of prototyping</h3>
-      <ul>
-        <li>Screen reader testing early in process</li>
-        <li>{'Brought up new questions'}</li>
-        <li>{'Make enhancements without changing application code'}</li>
-      </ul>
-    </div>
-  ),
-  (
     <ComboboDemo />
   ),
   (
     <ComboboMulti />
+  ),
+  (
+    <div>
+      <h2>Did we mention Combobo is open source?</h2>
+      <p>
+        <span>{'Try it out: '}</span>
+        <a href='https://schne324.github.io/combobo/demo/' target='_blank'>
+          {'interactive demo'}
+        </a>
+      </p>
+      <p><a href='https://github.com/schne324/combobo' target='_blank'>Combobo on GitHub</a></p>
+    </div>
   ),
   (
     <div>
@@ -299,17 +310,6 @@ combobo
       <div className="full-image">
         <img src={complexity} width="430px" alt="" role='presentation' />
       </div>
-    </div>
-  ),
-  (
-    <div>
-      <h2>Targeted Usability Testing</h2>
-      <p>{'(for when you don\'t have time to test All The Things)'}</p>
-      <ul>
-        <li>Complex interactions</li>
-        <li>Unique interactions and new patterns</li>
-        <li>{'Use cases you aren\'t sure about'}</li>
-      </ul>
     </div>
   ),
   (
@@ -330,15 +330,37 @@ combobo
     </div>
   ),
   (
+    <h1>Phase 4: Implementation</h1>
+  ),
+  (
     <div>
-      <h2>Did we mention Combobo is open source?</h2>
-      <p>
-        <span>{'Try it out: '}</span>
-        <a href='https://schne324.github.io/combobo/demo/' target='_blank'>
-          {'interactive demo'}
-        </a>
-      </p>
-      <p><a href='https://github.com/schne324/combobo' target='_blank'>Combobo on GitHub</a></p>
+      <h2>Comboboxes in WorldSpace Assure</h2>
+      <p>Assure needed two flavors of combobox:</p>
+      <ul>
+        <li>Single Select (checkpoint selection)</li>
+        <li>Multi Select (issue filters)</li>
+      </ul>
+    </div>
+  ),
+  (
+    <div>
+      <p>(screenshots of single select - before)</p>
+    </div>
+  ),
+  (
+    <div>
+      <p>(screenshots of filters - before)</p>
+    </div>
+  ),
+  (
+    <div>
+      <p>(demo)</p>
+    </div>
+  ),
+  (
+    <div>
+      <h1>(Phase 4.5: Pattern Library)</h1>
+      <p>If we have time!</p>
     </div>
   ),
   (
@@ -389,23 +411,6 @@ combobo
         </a>
       </div>
       <p>{'It\'s open source and accessible!'}</p>
-    </div>
-  ),
-  (
-    <div>
-      <h2 className="title-centered">Design Reviews</h2>
-      <h2 className="title-centered">Design Annotations</h2>
-      <h2 className="title-centered">Prototyping</h2>
-      <h2 className="title-centered">Usability Testing</h2>
-      <h2 className="title-centered">Pattern Libraries</h2>
-    </div>
-  ),
-  (
-    <div>
-      <h1 className="title-centered">"Agile Accessibility" - Dylan Barrell</h1>
-      <p className="title-centered">Deque Systems sponsor talk</p>
-      <br />
-      <p className="title-centered"><strong>2:15 PM Thursday</strong> (today!) in <strong>Room: Nile</strong></p>
     </div>
   ),
   (
