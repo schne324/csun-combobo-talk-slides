@@ -1,0 +1,104 @@
+/* Stuff that we should throw into the deque-slide-deck project */
+/* Everything in public/highlightjs.default.css */
+.title.small {
+  font-size: 1.3em;
+}
+
+.title.medium {
+  font-size: 2em;
+}
+
+.title.large {
+  font-size: 2.5em;
+}
+
+.background-image {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  z-index: 1;
+}
+
+/* END */
+
+.standalone-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.main-image {
+  margin-top: 20px;
+}
+
+img.standalone-image.framing {
+  margin: 10px auto;
+  align-self: flex-start;
+}
+
+.row.img-row {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img-row img {
+  align-self: flex-start;
+  margin: 8px 0;
+}
+
+.bottom-aligned-image {
+  position: absolute;
+  width: 100%;
+  bottom: 2px;
+  left: 0;
+  z-index: 3;
+}
+
+.text-centered {
+  text-align: center;
+}
+
+.space-top {
+  margin-top: 50px;
+}
+
+.row.space-evenly {
+  justify-content: space-evenly;
+}
+
+.vertical-center {
+  height: 335px;
+  align-items: center;
+}
+
+.row h2 {
+  z-index: 2;
+}
+
+.white {
+  color: #fff;
+}
+
+.center-center {
+  margin-top: 125px;
+}
+
+.code-slide  h3.centered {
+  text-align: center;
+}
+
+.code-slide pre {
+  display: inline-block;
+  font-size: 32px;
+}
+
+.code-slide.active-selected {
+  margin-top: 40px;
+}
+
+.events-methods {
+  margin-top: 60px;
+}
