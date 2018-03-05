@@ -1,16 +1,17 @@
 /*
-
 Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
 */
 
 .hljs {
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #F0F0F0;
+  background: #F2F2F2;
 }
 
+pre {
+  margin: 0;
+}
 
 /* Base color: saturation 0; */
 
@@ -20,7 +21,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 }
 
 .hljs-comment {
-  color: #888888;
+  color: #6E6E6E;
 }
 
 .hljs-keyword,
@@ -66,7 +67,7 @@ Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
 /* Language color: hue: 90; */
 
 .hljs-literal {
-  color: #78A960;
+  color: #547740;
 }
 
 .hljs-built_in,

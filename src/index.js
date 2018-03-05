@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Slideshow from './components/Slideshow';
 import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(
-  <Slideshow />,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
