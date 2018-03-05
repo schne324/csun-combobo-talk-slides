@@ -12,7 +12,6 @@ import singleExample1 from './img/single-select-combobox-example-1.png';
 import singleExample2 from './img/single-select-combobox-example-2.png';
 import teamwork from './img/teamwork.png';
 import codevdesign from './img/code-vs-design.png';
-import question from './img/question-mark-background.jpg';
 import filters1 from './img/filters-review-1.png';
 import filters2 from './img/filters-review-2.png';
 import filters2annot from './img/filters-review-2-annotated.png';
@@ -20,8 +19,9 @@ import complexity from './img/complexity-and-usability-testing.png';
 import cauldronLogo from './img/cauldron.png';
 import dqplCombobox from './img/dqpl-combo.png';
 import comboboLogo from './img/combobo-logo.png';
-import focus from './img/focus-styles.png';
 import framing from './img/framing-the-problem.jpeg';
+// import question from './img/question-mark-background.jpg';
+// import focus from './img/focus-styles.png';
 // styles
 import './App.css';
 
@@ -260,6 +260,155 @@ combobo
   .select(); // select that option
             `}
           </Highlight>
+        </Slide>
+        <Slide>
+          <h2 className='title'>TODO: Combobo demo slides</h2>
+        </Slide>
+        <Slide>
+          <h2 className='title medium'>Did we mention Combobo is open source?</h2>
+          <p>
+            <span>{'Try it out: '}</span>
+            <a
+              href='https://schne324.github.io/combobo/demo/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              {'interactive demo'}
+            </a>
+          </p>
+          <p>
+            <a
+              href='https://github.com/schne324/combobo'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Combobo on GitHub
+            </a>
+          </p>
+        </Slide>
+        <ChapterSlide>
+          <h2 className='title large'>Phase 3: Usability Testing</h2>
+        </ChapterSlide>
+        <Slide>
+          <Offscreen tag='h3'>
+            More complex interactions === more important to do usability testing
+          </Offscreen>
+          <img
+            className='complexity-image'
+            src={complexity}
+            width='430px'
+            alt=''
+          />
+        </Slide>
+        <Slide>
+          <h3 className='title large'>Want to test with screen reader users?</h3>
+          <h4 className='title small'>Code your prototype.</h4>
+          <p>(TODO: image of code in background, white text on top?)</p>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>How we tested Combobo</h3>
+          <ul>
+            <li>4 internal users</li>
+            <li>2 screen reader users</li>
+            <li>Collaboratively!</li>
+          </ul>
+        </Slide>
+        <ChapterSlide>
+          <h2 className='title large'>Phase 4: Implementation</h2>
+        </ChapterSlide>
+        <Slide>
+          <h3 className='title large'>Comboboxes in WorldSpace Assure</h3>
+          <h4 className='title small'>Assure needed two flavors of combobox:</h4>
+          <ul>
+            <li>Single Select (checkpoint selection)</li>
+            <li>Multi Select (issue filters)</li>
+          </ul>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>(TODO: screenshots of filters - before)</h3>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
+        </Slide>
+        <ChapterSlide>
+          <h2 className='title large'>Phase 4.5: Pattern Library</h2>
+          <p>TODO: Only do this if we have time!</p>
+        </ChapterSlide>
+        <Slide>
+          <div className='center-center'>
+            <h3 className='title large'>{'We\'ve built something solid'}</h3>
+            <h4 className='title small'>...how can we preserve this?</h4>
+          </div>
+        </Slide>
+        <Slide>
+          <div className='center-center'>
+            <h3 className='title large'>Pattern libraries FTW!</h3>
+          </div>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>Benefits of pattern libraries</h3>
+          <ul>
+            <li>DRY</li>
+            <li>Great for accessibility</li>
+            <li>Consistent look/feel</li>
+            <li>Write less CSS and focus on functionality of app</li>
+          </ul>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>{'Why isn\'t Combobo in the pattern library?'}</h3>
+          <p>The apple rule...</p>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>Will it be hard to add to it to the pattern library?</h3>
+          <p>Thanks to Combobo and existing designs, this will be easy!</p>
+        </Slide>
+        <Slide>
+          <Offscreen tag='h3'>Pattern library combobox wireframes</Offscreen>
+          <div className='standalone-image space-top'>
+            <img width='550px' src={dqplCombobox} alt='' />
+          </div>
+        </Slide>
+        <Slide>
+          <h3 className='title large'>Deque Pattern Library: Cauldron</h3>
+          <div className='text-centered'>
+            <img src={cauldronLogo} alt='' width='150px' />
+            <div>
+              <a
+                href='https://pattern-library.dequelabs.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {'https://pattern-library.dequelabs.com/'}
+              </a>
+            </div>
+            <p>{'It\'s open source and accessible!'}</p>
+          </div>
+        </Slide>
+        <Slide>
+          <div className='text-centered'>
+            <h2 className='title large'>Thanks!</h2>
+            <div className='row contact-cards'>
+              <div className='card'>
+                <img src={caitlin} width='100px' alt='' />
+                <div className='contact-text'>
+                  <strong>Caitlin Geier</strong>
+                  <p>caitlin.geier@deque.com</p>
+                  <a href='https://twitter.com/CaitlinGeier'>@CaitlinGeier</a>
+                </div>
+              </div>
+              <div className='card'>
+                <img src={harris} width='100px' alt='' />
+                <div className='contact-text'>
+                  <strong>Harris Schneiderman</strong>
+                  <p>harris@deque.com</p>
+                  <a href="https://twitter.com/theHarrisius">@theHarrisius</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </Slide>
       </DequeDeck>
     );

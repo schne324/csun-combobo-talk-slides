@@ -1,3 +1,8 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
 /* Stuff that we should throw into the deque-slide-deck project */
 /* Everything in public/highlightjs.default.css */
 .title.small {
@@ -28,6 +33,11 @@ footer {
 .standalone-image {
   display: block;
   margin: 0 auto;
+}
+
+.complexity-image {
+  display: block;
+  margin: 0;
 }
 
 .main-image {
@@ -101,4 +111,13 @@ img.standalone-image.framing {
 
 .events-methods {
   margin-top: 60px;
+}
+
+.contact-cards {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-cards .card {
+  margin: auto;
 }
