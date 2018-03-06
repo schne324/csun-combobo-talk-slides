@@ -329,7 +329,8 @@ combobo
           <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
         </Slide>
         <Slide>
-          <h3 className='title large'>(TODO: screenshots of filters - before)</h3>
+          <h3 className='title large'>Old WorldSpace Assure Multiselect Filters</h3>
+          <img src={oldFilters} alt="multiselect filters in WorldSpace Assure circa 2016" />
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
