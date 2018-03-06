@@ -1539,6 +1539,10 @@ combined-stream@1.0.6, combined-stream@^1.0.5, combined-stream@~1.0.5:
   dependencies:
     delayed-stream "~1.0.0"
 
+combobo@^2.0.1:
+  version "2.0.1"
+  resolved "http://agora.dequecloud.com/artifactory/api/npm/dequelabs/combobo/-/combobo-2.0.1.tgz#f42552ea630f2c5e013e9c6a678a68cb4f134082"
+
 commander@2.14.x, commander@^2.11.0, commander@~2.14.1:
   version "2.14.1"
   resolved "http://agora.dequecloud.com/artifactory/api/npm/dequelabs/commander/-/commander-2.14.1.tgz#2235123e37af8ca3c65df45b026dbd357b01b9aa"

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { DequeDeck, TitleSlide, Slide, ChapterSlide } from 'deque-slide-deck';
 import { Highlight } from 'react-fast-highlight';
 import Offscreen from 'react-offscreen';
+import SingleSelect from './SingleSelect';
+import MultiSelect from './MultiSelect';
 // slide images
 import caitlin from './img/caitlin.jpg';
 import harris from './img/harris.jpg';
@@ -262,7 +264,12 @@ combobo
           </Highlight>
         </Slide>
         <Slide>
-          <h2 className='title'>TODO: Combobo demo slides</h2>
+          <h2 className='title medium'>Single-select demo</h2>
+          <SingleSelect />
+        </Slide>
+        <Slide>
+          <h2 className='title medium'>Multi-select demo</h2>
+          <MultiSelect />
         </Slide>
         <Slide>
           <h2 className='title medium'>Did we mention Combobo is open source?</h2>
