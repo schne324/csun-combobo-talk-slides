@@ -327,13 +327,16 @@ combobo
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
+          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p> 
         </Slide>
         <Slide>
-          <h3 className='title large'>Old WorldSpace Assure Multiselect Filters</h3>
-          <img src={oldFilters} alt="multiselect filters in WorldSpace Assure circa 2016" />
+          <h3 className='title large'>Old Multiselect Filters</h3>
+          <img src={oldFilters} width="400px" alt="multiselect filters in WorldSpace Assure circa 2016" />
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
+          <a href="https://assuredev.dequelabs.com/test-run/e9357634-20d1-11e8-a712-87456f647383/issues" target="_blank">Assure demo</a>
+          <p>TODO: make a quick video demo as backup for if live demo {'doesn\'t work'}</p>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 4.5: Pattern Library</h2>
