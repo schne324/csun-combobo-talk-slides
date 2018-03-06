@@ -22,6 +22,7 @@ import cauldronLogo from './img/cauldron.png';
 import dqplCombobox from './img/dqpl-combo.png';
 import comboboLogo from './img/combobo-logo.png';
 import framing from './img/framing-the-problem.jpeg';
+import timeline from './img/timeline.png';
 // import question from './img/question-mark-background.jpg';
 // import focus from './img/focus-styles.png';
 // styles
@@ -89,9 +90,9 @@ class App extends Component {
           </div>
           <img src={teamwork} className='standalone-image bottom-aligned-image' alt='' />
         </Slide>
-        <ChapterSlide>
-          <h2 className='title large'>(Placeholder: timeline of design / development chart)</h2>
-        </ChapterSlide>
+        <Slide>
+          <img src={timeline} width="100%" alt='' />
+        </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 1: Design</h2>
         </ChapterSlide>
@@ -149,7 +150,7 @@ class App extends Component {
           <h2 className='title medium'>Showing Selected Filters: Second Review</h2>
           <img
             className='standalone-image main-image'
-            width='400px'
+            width='500px'
             src={filters2}
             alt='after second review, selected items show beneath filters as separate section'
           />
@@ -158,7 +159,7 @@ class App extends Component {
           <Offscreen tag='h3'>Annotations added after second review</Offscreen>
           <img
             className='standalone-image main-image'
-            width='400px'
+            width='500px'
             src={filters2annot}
             alt='same wireframes as previous slide with annotations'
           />
@@ -333,12 +334,16 @@ combobo
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
+          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p> 
         </Slide>
         <Slide>
-          <h3 className='title large'>(TODO: screenshots of filters - before)</h3>
+          <h3 className='title large'>Old Multiselect Filters</h3>
+          <img src={oldFilters} width="400px" alt="multiselect filters in WorldSpace Assure circa 2016" />
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
+          <a href="https://assuredev.dequelabs.com/test-run/e9357634-20d1-11e8-a712-87456f647383/issues" target="_blank">Assure demo</a>
+          <p>TODO: make a quick video demo as backup for if live demo {'doesn\'t work'}</p>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 4.5: Pattern Library</h2>
