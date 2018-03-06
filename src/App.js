@@ -20,6 +20,7 @@ import cauldronLogo from './img/cauldron.png';
 import dqplCombobox from './img/dqpl-combo.png';
 import comboboLogo from './img/combobo-logo.png';
 import framing from './img/framing-the-problem.jpeg';
+import timeline from './img/timeline.png';
 // import question from './img/question-mark-background.jpg';
 // import focus from './img/focus-styles.png';
 // styles
@@ -87,9 +88,9 @@ class App extends Component {
           </div>
           <img src={teamwork} className='standalone-image bottom-aligned-image' alt='' />
         </Slide>
-        <ChapterSlide>
-          <h2 className='title large'>(Placeholder: timeline of design / development chart)</h2>
-        </ChapterSlide>
+        <Slide>
+          <img src={timeline} width="100%" alt='' />
+        </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 1: Design</h2>
         </ChapterSlide>
@@ -147,7 +148,7 @@ class App extends Component {
           <h2 className='title medium'>Showing Selected Filters: Second Review</h2>
           <img
             className='standalone-image main-image'
-            width='400px'
+            width='500px'
             src={filters2}
             alt='after second review, selected items show beneath filters as separate section'
           />
@@ -156,7 +157,7 @@ class App extends Component {
           <Offscreen tag='h3'>Annotations added after second review</Offscreen>
           <img
             className='standalone-image main-image'
-            width='400px'
+            width='500px'
             src={filters2annot}
             alt='same wireframes as previous slide with annotations'
           />
