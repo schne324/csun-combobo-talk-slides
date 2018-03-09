@@ -40,10 +40,19 @@ class App extends Component {
           <h2 className='title small'>Building Accessible Complex Widgets</h2>
         </TitleSlide>
         <Slide>
-          <h2 className='title large'>What We Do</h2>
-          <p>We are a UX Designer and a Web Developer</p>
+          <h2 className='title large text-centered'>Who We Are</h2>
+          <div className='row space-evenly'>
+            <div>
+              <h3 className='text-centered'>Designer</h3>
+              <img className='large-profile' src={caitlin} width="150px" alt="Caitlin Geier" />
+            </div>
+            <div>
+              <h3 className='text-centered'>Developer</h3>
+              <img className='large-profile' src={harris} width="150px" alt="Harris Schneiderman" />
+            </div>
+          </div>
           <p>
-            Which basically means we design and build <strong>web applications </strong>
+            We design and build <strong>web applications </strong>
             which help <strong>development teams </strong>
             perform <strong>accessibility testing</strong>.
           </p>
@@ -163,29 +172,33 @@ class App extends Component {
           />
         </Slide>
         <Slide>
-          <div className='center-center'>
+          <div className='center-center text-centered'>
             <h2 className='title large'>Get developers involved!</h2>
-            <p>being involved earlier means starting development sooner.</p>
+            <p>Being involved earlier means starting development sooner.</p>
           </div>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 2: Prototypes</h2>
         </ChapterSlide>
         <Slide>
-          <h2 className='title large'>Types of prototypes</h2>
-          <ul>
-            <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
-            <li><strong>Higher fidelity</strong> for testing interactions</li>
-            <li><strong>Coded</strong> for testing with keyboard / AT users</li>
-          </ul>
+          <div className='center-center'>
+            <h2 className='title large'>Types of prototypes</h2>
+            <ul>
+              <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
+              <li><strong>Higher fidelity</strong> for testing interactions</li>
+              <li><strong>Coded</strong> for testing with keyboard / AT users</li>
+            </ul>
+          </div>
         </Slide>
         <Slide>
-          <h2 className='title large'>The value of prototyping</h2>
-          <ul>
-            <li>Screen reader testing early in process</li>
-            <li>{'Brought up new questions'}</li>
-            <li>{'Make enhancements without changing application code'}</li>
-          </ul>
+          <div className='center-center'>
+            <h2 className='title large'>The value of prototyping</h2>
+            <ul>
+              <li>Screen reader testing early in process</li>
+              <li>{'Brought up new questions'}</li>
+              <li>{'Make enhancements without changing application code'}</li>
+            </ul>
+          </div>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>
@@ -327,7 +340,7 @@ combobo
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
-          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p> 
+          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p>
         </Slide>
         <Slide>
           <h3 className='title large'>Old Multiselect Filters</h3>
