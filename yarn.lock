@@ -1978,9 +1978,9 @@ depd@~1.1.1:
   version "1.1.2"
   resolved "http://agora.dequecloud.com/artifactory/api/npm/dequelabs/depd/-/depd-1.1.2.tgz#9bcd52e14c097763e749b274c4346ed2e560b5a9"
 
-deque-slide-deck@^1.1.1:
-  version "1.1.1"
-  resolved "http://agora.dequecloud.com/artifactory/api/npm/dequelabs/deque-slide-deck-v1.1.1.tgz#a446cb64223b347a9065dfcdb9ca7661d52d6c7f"
+deque-slide-deck@^1.2.0:
+  version "1.2.0"
+  resolved "http://agora.dequecloud.com/artifactory/api/npm/dequelabs/deque-slide-deck-v1.2.0.tgz#846b213206ecb1a6ecf49970d650e17a9eb41aa7"
   dependencies:
     prop-types "^15.6.1"
     react "^16.2.0"

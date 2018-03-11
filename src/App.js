@@ -31,7 +31,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <DequeDeck>
+      <DequeDeck animation='bounce'>
         <TitleSlide
           profiles={[
             { name: 'Caitlin Geier', image: caitlin },
@@ -42,10 +42,19 @@ class App extends Component {
           <h2 className='title small'>Building Accessible Complex Widgets</h2>
         </TitleSlide>
         <Slide>
-          <h2 className='title large'>What We Do</h2>
-          <p>We are a UX Designer and a Web Developer</p>
+          <h2 className='title large text-centered'>Who We Are</h2>
+          <div className='row space-evenly'>
+            <div>
+              <h3 className='text-centered'>Designer</h3>
+              <img className='large-profile' src={caitlin} width="150px" alt="Caitlin Geier" />
+            </div>
+            <div>
+              <h3 className='text-centered'>Developer</h3>
+              <img className='large-profile' src={harris} width="150px" alt="Harris Schneiderman" />
+            </div>
+          </div>
           <p>
-            Which basically means we design and build <strong>web applications </strong>
+            We design and build <strong>web applications </strong>
             which help <strong>development teams </strong>
             perform <strong>accessibility testing</strong>.
           </p>
@@ -68,7 +77,7 @@ class App extends Component {
         <Slide>
           <Offscreen tag='h2'>Example of the problem</Offscreen>
           <img
-            className='standalone-image'
+            className='rest-centered'
             src={oldFilters}
             width='475px'
             alt='multi-select filters in WorldSpace Assure prior to version 1.4'
@@ -76,7 +85,7 @@ class App extends Component {
         </Slide>
         <Slide>
           <Offscreen tag='h2'>Framing the Problem: Existing Comboboxes</Offscreen>
-          <div className='row img-row'>
+          <div className='row img-row rest-centered'>
             <img src={singleExample1} width='40%' alt="single select combobox example 1"/>
             <img src={multiExample2} width='40%' alt="multi select combobox example 1"/>
             <img src={multiExample1} width='40%' alt="multi select combobox example 2"/>
@@ -84,11 +93,11 @@ class App extends Component {
           </div>
         </Slide>
         <Slide>
-          <div className='text-centered space-top'>
+          <div className='text-centered'>
             <h2 className='title large'>Accessibility === difficult</h2>
             <h3 className='title medium'>Collaboration === less difficult</h3>
           </div>
-          <img src={teamwork} className='standalone-image bottom-aligned-image' alt='' />
+          <img src={teamwork} className='bottom-aligned-image' alt='' />
         </Slide>
         <Slide>
           <img src={timeline} width="100%" alt='' />
@@ -129,65 +138,68 @@ class App extends Component {
           </div>
         </Slide>
         <Slide>
-          <h2 className='title medium'>Showing Selected Filters: Before</h2>
+          <h2 className='title medium'>Selected Filters: Before</h2>
           <img
-            className='standalone-image main-image'
+            className='rest-centered'
             width='400px'
             src={oldFilters}
             alt='multi-select filters in WorldSpace Assure prior to version 1.4'
           />
         </Slide>
         <Slide>
-          <h2 className='title medium'>Showing Selected Filters: First Review</h2>
+          <h2 className='title medium'>Selected Filters: First Review</h2>
           <img
-            className='standalone-image main-image'
+            className='rest-centered'
             width='400px'
             src={filters1}
             alt='new multi-select filters showing selected items in a side panel in the widget'
           />
         </Slide>
         <Slide>
-          <h2 className='title medium'>Showing Selected Filters: Second Review</h2>
+          <h2 className='title medium'>Selected Filters: Second Review</h2>
           <img
-            className='standalone-image main-image'
+            className='rest-centered'
             width='500px'
             src={filters2}
             alt='after second review, selected items show beneath filters as separate section'
           />
         </Slide>
         <Slide>
-          <Offscreen tag='h3'>Annotations added after second review</Offscreen>
+          <h2 className='title medium'>With Annotations</h2>
           <img
-            className='standalone-image main-image'
             width='500px'
             src={filters2annot}
             alt='same wireframes as previous slide with annotations'
           />
         </Slide>
-        <Slide>
-          <div className='center-center'>
+        <Slide className='central'>
+          <div>
             <h2 className='title large'>Get developers involved!</h2>
-            <p>being involved earlier means starting development sooner.</p>
+            <p>Being involved earlier means starting development sooner.</p>
           </div>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 2: Prototypes</h2>
         </ChapterSlide>
-        <Slide>
-          <h2 className='title large'>Types of prototypes</h2>
-          <ul>
-            <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
-            <li><strong>Higher fidelity</strong> for testing interactions</li>
-            <li><strong>Coded</strong> for testing with keyboard / AT users</li>
-          </ul>
+        <Slide className='central'>
+          <div>
+            <h2 className='title large'>Types of prototypes</h2>
+            <ul>
+              <li><strong>Low fidelity</strong> for testing layout, content, etc.</li>
+              <li><strong>Higher fidelity</strong> for testing interactions</li>
+              <li><strong>Coded</strong> for testing with keyboard / AT users</li>
+            </ul>
+          </div>
         </Slide>
-        <Slide>
-          <h2 className='title large'>The value of prototyping</h2>
-          <ul>
-            <li>Screen reader testing early in process</li>
-            <li>{'Brought up new questions'}</li>
-            <li>{'Make enhancements without changing application code'}</li>
-          </ul>
+        <Slide className='central'>
+          <div>
+            <h2 className='title large'>The value of prototyping</h2>
+            <ul>
+              <li>Screen reader testing early in process</li>
+              <li>{'Brought up new questions'}</li>
+              <li>{'Make enhancements without changing application code'}</li>
+            </ul>
+          </div>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>
@@ -197,7 +209,7 @@ class App extends Component {
         <Slide>
           <h3 className='title medium'>Combobo</h3>
           <p>A modular / accessible combobox plugin written by Harris</p>
-          <img className='standalone-image' src={comboboLogo} width='200px' alt='' />
+          <img className='rest-centered' src={comboboLogo} width='200px' alt='' />
         </Slide>
         <Slide>
           <Offscreen tag='h3'>Example combobo instantiation</Offscreen>
@@ -225,8 +237,8 @@ const combobo = new Combobo({
           `}
           </Highlight>
         </Slide>
-        <Slide>
-          <div className='center-center code-slide'>
+        <Slide className='central'>
+          <div>
             <h3 className='centered'>
               <Highlight languages={['js']}>
                 {'{ useLiveRegion: true }'}
@@ -234,8 +246,8 @@ const combobo = new Combobo({
             </h3>
           </div>
         </Slide>
-        <Slide>
-          <div className='code-slide active-selected'>
+        <Slide className='central'>
+          <div>
             <h3>
               <Highlight languages={['js']}>
                 {`
@@ -250,8 +262,9 @@ const combobo = new Combobo({
         </Slide>
         <Slide>
           <h3 className='title medium'>Combobo events / methods</h3>
-          <Highlight languages={['js']} className='events-methods'>
-            {`
+          <div className='rest-centered'>
+            <Highlight languages={['js']}>
+              {`
 combobo
   .on('change', function () {
     console.log('stuff has changed and stuff');
@@ -261,16 +274,71 @@ combobo
   })
   .goTo(combobo.getOptIndex() + 5) // move 5 options forward
   .select(); // select that option
-            `}
-          </Highlight>
+              `}
+            </Highlight>
+          </div>
         </Slide>
-        <Slide>
+        <Slide className='interactive'>
           <h2 className='title medium'>Single-select demo</h2>
           <SingleSelect />
+          <div className='row'>
+            <Highlight languages={['html']}>
+            {`
+<label for="combobo">Choose day</label>
+<input class="combobox" id="combobo" type="text" />
+<div class="listbox" role="listbox">
+  <div class="option" role="option">Monday</div>
+  <div class="option" role="option">Tuesday</div>
+  <div class="option" role="option">Wednesday</div>
+  <div class="option" role="option">Thursday</div>
+  <div class="option" role="option">Friday</div>
+  <div class="option" role="option">Saturday</div>
+  <div class="option" role="option">Sunday</div>
+</div>
+            `}
+            </Highlight>
+            <Highlight languages={['js']}>
+            {`
+const Combobo = require('combobo');
+
+new Combobo({
+  optionValue: 'match'
+});
+            `}
+            </Highlight>
+          </div>
         </Slide>
-        <Slide>
+        <Slide className='interactive'>
           <h2 className='title medium'>Multi-select demo</h2>
           <MultiSelect />
+          <div className='row'>
+            <Highlight languages={['html']}>
+              {`
+<label for="combobo-multi">Choose favorite foods</label>
+<input class="combobox-multi" id="combobo-multi" type="text" />
+<div class="listbox-multi" role="listbox">
+  <div class="opt" role="option">Sushi</div>
+  <div class="opt" role="option">Tacos</div>
+  <div class="opt" role="option">Pasta</div>
+  <div class="opt" role="option">Artichoke</div>
+  <div class="opt" role="option">Peanut butter and jelly</div>
+</div>
+              `}
+            </Highlight>
+            <Highlight languages={['js']}>
+              {`
+const Combobo = require('combobo');
+
+new Combobo({
+  input: '.combobox-multi',
+  list: '.listbox-multi',
+  options: '.opt',
+  optionValue: 'match',
+  multiselect: true
+});
+              `}
+            </Highlight>
+          </div>
         </Slide>
         <Slide>
           <h2 className='title medium'>Did we mention Combobo is open source?</h2>
@@ -334,29 +402,39 @@ combobo
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
-          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p> 
+          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p>
         </Slide>
         <Slide>
           <h3 className='title large'>Old Multiselect Filters</h3>
-          <img src={oldFilters} width="400px" alt="multiselect filters in WorldSpace Assure circa 2016" />
+          <img
+            className='rest-centered'
+            src={oldFilters}
+            width='400px'
+            alt='multiselect filters in WorldSpace Assure circa 2016'
+          />
         </Slide>
         <Slide>
           <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
-          <a href="https://assuredev.dequelabs.com/test-run/e9357634-20d1-11e8-a712-87456f647383/issues" target="_blank">Assure demo</a>
+          <a
+            href='https://assuredev.dequelabs.com/test-run/e9357634-20d1-11e8-a712-87456f647383/issues'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Assure demo
+          </a>
           <p>TODO: make a quick video demo as backup for if live demo {'doesn\'t work'}</p>
         </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 4.5: Pattern Library</h2>
-          <p>TODO: Only do this if we have time!</p>
         </ChapterSlide>
-        <Slide>
-          <div className='center-center'>
+        <Slide className='central'>
+          <div>
             <h3 className='title large'>{'We\'ve built something solid'}</h3>
             <h4 className='title small'>...how can we preserve this?</h4>
           </div>
         </Slide>
-        <Slide>
-          <div className='center-center'>
+        <Slide className='central'>
+          <div>
             <h3 className='title large'>Pattern libraries FTW!</h3>
           </div>
         </Slide>
@@ -379,8 +457,8 @@ combobo
         </Slide>
         <Slide>
           <Offscreen tag='h3'>Pattern library combobox wireframes</Offscreen>
-          <div className='standalone-image space-top'>
-            <img width='550px' src={dqplCombobox} alt='' />
+          <div className='rest-centered'>
+            <img width='510px' src={dqplCombobox} alt='' />
           </div>
         </Slide>
         <Slide>

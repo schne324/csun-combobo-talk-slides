@@ -1,42 +1,16 @@
-/* Stuff that we should throw into the deque-slide-deck project */
-/* Everything in public/highlightjs.default.css */
-.title.small {
-  font-size: 1.3em;
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-.title.medium {
-  font-size: 2em;
+.rest-centered {
+  margin: auto;
 }
 
-.title.large {
-  font-size: 2.5em;
-}
-
-.background-image {
-  z-index: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-footer {
-  z-index: 1;
-}
-
-/* END */
-
-.standalone-image {
-  display: block;
-  margin: 0 auto;
-}
-
-.complexity-image {
-  display: block;
-  margin: 0;
-}
-
-.main-image {
-  margin-top: 20px;
+code {
+  max-height: 335px;
 }
 
 img.standalone-image.framing {
@@ -66,10 +40,6 @@ img.standalone-image.framing {
   text-align: center;
 }
 
-.space-top {
-  margin-top: 50px;
-}
-
 .row.space-evenly {
   justify-content: space-evenly;
 }
@@ -85,27 +55,6 @@ img.standalone-image.framing {
 
 .white {
   color: #fff;
-}
-
-.center-center {
-  margin-top: 125px;
-}
-
-.code-slide  h3.centered {
-  text-align: center;
-}
-
-.code-slide pre {
-  display: inline-block;
-  font-size: 32px;
-}
-
-.code-slide.active-selected {
-  margin-top: 40px;
-}
-
-.events-methods {
-  margin-top: 60px;
 }
 
 .contact-cards {
@@ -128,7 +77,8 @@ label {
   margin-right: 5px;
 }
 
-.combobox {
+.combobox,
+.combobox-multi {
   width: 250px;
   box-sizing: border-box;
   position: relative;
@@ -138,22 +88,12 @@ label {
   color: #212E59;
 }
 
-.fa-caret-down {
-  position: absolute;
-  font-size: 19px;
-  line-height: 40px;
-  top: 0;
-  right: 0;
-  padding: 0 10px;
-  color: #fff;
-  background-color: #212E59;
-}
-
-.listbox {
+.listbox,
+.listbox-multi {
   display: none;
   position: absolute;
-  top: 40px; /* the height of the input */
-  left: 0;
+  top: 41px; /* the height of the input */
+  left: 135px;
   width: 250px;
   box-sizing: border-box;
   padding: 0;
@@ -165,63 +105,35 @@ label {
   overflow-y: auto;
 }
 
-.listbox.open {
+.listbox.open,
+.listbox-multi.open {
   display: block;
 }
 
-.listbox .option {
+.listbox .option,
+.listbox-multi .opt {
   padding: 4px 6px;
   cursor: default;
+  transition: all 350ms;
 }
 
-.listbox .option.selected {
+.listbox .option.selected,
+.listbox-multi .opt.selected {
   color: #fff;
   background-color: forestgreen;
+  transition: all 350ms;
 }
 
-.listbox .option.active {
+.listbox .option.active,
+.listbox-multi .opt.active {
   color: #fff;
   background-color: #212E59;
+  transition: all 350ms;
 }
 
-.listbox .underline {
+.listbox .underline,
+.listbox-multi .underline {
   text-decoration: underline;
-}
-
-.multiselect .option:before,
-.multiselect-with-groups .option:before {
-  content: '';
-  display:inline-block;
-  width: 13px;
-  height: 13px;
-  border: 2px solid #ddd;
-  margin-right: 7px;
-}
-
-.multiselect .option:after,
-.multiselect-with-groups .option:after {
-  /*Add another block-level blank space*/
-  content: '';
-  display: none;
-  margin: 2px auto;
-
-  /*Make it a small rectangle so the border will create an L-shape*/
-  width: 4px;
-  height: 10px;
-
-  /*Add a white border on the bottom and left, creating that 'L' */
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-
-  /*Rotate the L 45 degrees to turn it into a checkmark*/
-  transform: rotate(45deg);
-}
-
-.multiselect .option.selected:after,
-.multiselect-with-groups .option.selected:after {
-  display:inline-block;
-  left: 12px;
-  position: absolute;
 }
 
 .optgroup-label {
@@ -236,5 +148,49 @@ label {
 
 .ok {
   display: block;
-  margin: 10px 0;
+  margin: 10px auto;
+  border: none;
+  background: #0077C8;
+  color: #fff;
+  padding: 5px 20px;
+  box-shadow: 0 0 1px #000;
+  transition: all 600ms;
+}
+
+.ok:focus {
+  transition: all 600ms;
+  background: #000;
+}
+
+.ok:active {
+  border-radius: 8px;
+  transition: all 600ms;
+  background: #fff;
+  color: #0077C8;
+}
+
+.large-profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #87bbe4;
+}
+
+.interactive {
+  text-align: center;
+}
+
+.interactive .row {
+  justify-content: space-between;
+}
+
+.interactive pre {
+  text-align: left;
+  max-width: 48%;
+  font-size: 10px;
+  flex: 1;
+}
+
+.interactive code {
+  height: 165px;
 }
