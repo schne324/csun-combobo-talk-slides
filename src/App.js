@@ -31,7 +31,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <DequeDeck animation='bounce'>
+      <DequeDeck animation='fade'>
         <TitleSlide
           profiles={[
             { name: 'Caitlin Geier', image: caitlin },
