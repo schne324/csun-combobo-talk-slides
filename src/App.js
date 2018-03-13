@@ -193,7 +193,7 @@ class App extends Component {
         </Slide>
         <Slide className='central'>
           <div>
-            <h2 className='title large'>The value of prototyping</h2>
+            <h2 className='title large'>The value of coded prototypes</h2>
             <ul>
               <li>Screen reader testing early in process</li>
               <li>{'Brought up new questions'}</li>
@@ -452,10 +452,6 @@ new Combobo({
           <p>The apple rule...</p>
         </Slide>
         <Slide>
-          <h3 className='title large'>Will it be hard to add to it to the pattern library?</h3>
-          <p>Thanks to Combobo and existing designs, this will be easy!</p>
-        </Slide>
-        <Slide>
           <Offscreen tag='h3'>Pattern library combobox wireframes</Offscreen>
           <div className='rest-centered'>
             <img width='510px' src={dqplCombobox} alt='' />
@@ -479,7 +475,7 @@ new Combobo({
         </Slide>
         <Slide>
           <div className='text-centered'>
-            <h2 className='title large'>Thanks!</h2>
+            <h2 className='title large'>Questions?</h2>
             <div className='row contact-cards'>
               <div className='card'>
                 <img src={caitlin} width='100px' alt='' />
