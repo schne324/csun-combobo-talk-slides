@@ -68,6 +68,11 @@ class App extends Component {
             <li>How much we love ARIA ({'when it\'s necessary!'})</li>
           </ul>
         </Slide>
+        <Slide>
+          <h2 className='rest-centered'>A Note on Using ARIA:</h2>
+          <blockquote>"If you can use a native HTML element or attribute with the semantics and behavior you require <strong>already built in</strong>, instead of re-purposing an element and adding an ARIA role, state or property to make it accessible, <strong>then do so</strong>."</blockquote>
+          <a href="https://w3c.github.io/using-aria/#rule1" className='rest-centered'>ARIA Specifications: Rule #1</a>
+        </Slide>
         <ChapterSlide>
           <div className='row'>
             <h1>Framing the Problem</h1>
@@ -86,10 +91,10 @@ class App extends Component {
         <Slide>
           <Offscreen tag='h2'>Framing the Problem: Existing Comboboxes</Offscreen>
           <div className='row img-row rest-centered'>
-            <img src={singleExample1} width='40%' alt="single select combobox example 1"/>
-            <img src={multiExample2} width='40%' alt="multi select combobox example 1"/>
-            <img src={multiExample1} width='40%' alt="multi select combobox example 2"/>
-            <img src={singleExample2} width='40%' alt="single select combobox example 2"/>
+            <img src={singleExample1} width='45%' alt="single select combobox example 1"/>
+            <img src={multiExample1} width='45%' alt="multi select combobox example 2"/>
+            <img src={multiExample2} width='45%' alt="multi select combobox example 1"/>
+            <img src={singleExample2} width='45%' alt="single select combobox example 2"/>
           </div>
         </Slide>
         <Slide>
@@ -476,22 +481,18 @@ new Combobo({
         <Slide>
           <div className='text-centered'>
             <h2 className='title large'>Questions?</h2>
-            <div className='row contact-cards'>
-              <div className='card'>
-                <img src={caitlin} width='100px' alt='' />
-                <div className='contact-text'>
-                  <strong>Caitlin Geier</strong>
-                  <p>caitlin.geier@deque.com</p>
-                  <a href='https://twitter.com/CaitlinGeier'>@CaitlinGeier</a>
-                </div>
+            <div className='row space-evenly'>
+              <div>
+                <img className='large-profile' src={caitlin} width="150px" alt="Caitlin Geier" />
+                <h3 className='profile-text text-centered'>Caitlin Geier</h3>
+                <p className='profile-text text-centered'>caitlin.geier@deque.com</p>
+                <p className='profile-text text-centered'><a href="https://twitter.com/CaitlinGeier">@CaitlinGeier</a></p>
               </div>
-              <div className='card'>
-                <img src={harris} width='100px' alt='' />
-                <div className='contact-text'>
-                  <strong>Harris Schneiderman</strong>
-                  <p>harris@deque.com</p>
-                  <a href="https://twitter.com/theHarrisius">@theHarrisius</a>
-                </div>
+              <div>
+                <img className='large-profile' src={harris} width="150px" alt="Harris Schneiderman" />
+                <h3 className='profile-text text-centered'>Harris Schneiderman</h3>
+                <p className='profile-text text-centered'>harris@deque.com</p>
+                <p className='profile-text text-centered'><a href="https://twitter.com/theHarrisius">@theHarrisius</a></p>
               </div>
             </div>
           </div>
