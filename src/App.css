@@ -9,13 +9,18 @@
   margin: auto;
 }
 
+.framing-title {
+  margin-top: 80px;
+}
+
 code {
   max-height: 335px;
 }
 
 img.standalone-image.framing {
-  margin: 10px auto;
   align-self: flex-start;
+  width: 88%;
+  position: absolute;
 }
 
 .row.img-row {

@@ -21,7 +21,7 @@ import complexity from './img/complexity-and-usability-testing.png';
 import cauldronLogo from './img/cauldron.png';
 import dqplCombobox from './img/dqpl-combo.png';
 import comboboLogo from './img/combobo-logo.png';
-import framing from './img/framing-the-problem.jpeg';
+import framing from './img/frame.png';
 import timeline from './img/timeline.png';
 // import question from './img/question-mark-background.jpg';
 // import focus from './img/focus-styles.png';
@@ -75,8 +75,8 @@ class App extends Component {
         </Slide>
         <ChapterSlide>
           <div className='row'>
-            <h1>Framing the Problem</h1>
-            <img src={framing} alt='' width='125px' className='standalone-image framing' />
+            <h1 className='rest-centered framing-title'>Framing the Problem</h1>
+            <img src={framing} alt='' className='standalone-image framing' />
           </div>
         </ChapterSlide>
         <Slide>
