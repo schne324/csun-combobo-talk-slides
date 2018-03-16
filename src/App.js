@@ -23,6 +23,7 @@ import dqplCombobox from './img/dqpl-combo.png';
 import comboboLogo from './img/combobo-logo.png';
 import framing from './img/frame.png';
 import timeline from './img/timeline.png';
+import designbg from './img/design-bg.png';
 // import question from './img/question-mark-background.jpg';
 // import focus from './img/focus-styles.png';
 // styles
@@ -99,16 +100,18 @@ class App extends Component {
         </Slide>
         <Slide>
           <div className='text-centered'>
-            <h2 className='title large'>Accessibility === difficult</h2>
-            <h3 className='title medium'>Collaboration === less difficult</h3>
+            <h2 className='title large' style={{paddingTop :'65px'}}>Accessibility === difficult</h2>
+            <h3 className='large'>Collaboration === less difficult</h3>
           </div>
           <img src={teamwork} className='bottom-aligned-image' alt='' />
         </Slide>
         <Slide>
-          <img src={timeline} width="100%" alt='' />
+          <Offscreen tag='h2'>Timeline for designing and building a complex widget</Offscreen>
+          <img src={timeline} width="100%" alt='The process starts with designer working alone. The prototype is started before the design is finished. Once the prototype is working, it can be tested with users. The prototype, testing and implementation phases all overlap. The designer is involved throughout the whole process.' />
         </Slide>
         <ChapterSlide>
-          <h2 className='title large'>Phase 1: Design</h2>
+          <h2 className='title large chapter-heading'>Phase 1: Design</h2>
+          <img className='chapter-image' src={designbg} alt=""/>
         </ChapterSlide>
         <Slide>
           <div className='background-image'>
@@ -429,6 +432,10 @@ new Combobo({
           </a>
           <p>TODO: make a quick video demo as backup for if live demo {'doesn\'t work'}</p>
         </Slide>
+        <Slide>
+          <Offscreen tag='h2'>Revisiting the timeline for designing and building our complex widget</Offscreen>
+          <img src={timeline} width="100%" alt='The process starts with designer working alone. The prototype is started before the design is finished. Once the prototype is working, it can be tested with users. The prototype, testing and implementation phases all overlap. The designer is involved throughout the whole process.' />
+        </Slide>
         <ChapterSlide>
           <h2 className='title large'>Phase 4.5: Pattern Library</h2>
         </ChapterSlide>
@@ -495,6 +502,12 @@ new Combobo({
                 <p className='profile-text text-centered'><a href="https://twitter.com/theHarrisius">@theHarrisius</a></p>
               </div>
             </div>
+          </div>
+        </Slide>
+        <Slide>
+          <div className='rest-centered'>
+            <h2 className='rest-centered medium'>Sign up to receive presentation slides:</h2>
+            <p className='title medium'><a href="http://www.deque.com/csun18">{'http://www.deque.com/csun18'}</a></p>
           </div>
         </Slide>
       </DequeDeck>

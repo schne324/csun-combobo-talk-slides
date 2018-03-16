@@ -44,6 +44,22 @@ img.standalone-image.framing {
   text-align: center;
 }
 
+.wave {
+  z-index: 1;
+}
+
+.chapter-heading {
+  z-index: 1;
+  text-align: center;
+}
+
+.chapter-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .row.space-evenly {
   justify-content: space-evenly;
 }
