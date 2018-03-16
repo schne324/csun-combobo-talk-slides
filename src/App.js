@@ -24,6 +24,11 @@ import comboboLogo from './img/combobo-logo.png';
 import framing from './img/frame.png';
 import timeline from './img/timeline.png';
 import designbg from './img/design-bg.png';
+import prototypebg from './img/prototype-bg-final.png';
+import testingbg from './img/testing-bg.png';
+import implementationbg from './img/implementation-bg.png';
+import patternlibbg from './img/patternlib-bg.png';
+import freddy from './img/freddy.png';
 // import question from './img/question-mark-background.jpg';
 // import focus from './img/focus-styles.png';
 // styles
@@ -47,11 +52,11 @@ class App extends Component {
           <div className='row space-evenly'>
             <div>
               <h3 className='text-centered'>Designer</h3>
-              <img className='large-profile' src={caitlin} width="150px" alt="Caitlin Geier" />
+              <img className='large-profile' src={caitlin} width="150px" style={{marginTop : 0}} alt="Caitlin Geier" />
             </div>
             <div>
               <h3 className='text-centered'>Developer</h3>
-              <img className='large-profile' src={harris} width="150px" alt="Harris Schneiderman" />
+              <img className='large-profile' src={harris} width="150px" style={{marginTop : 0}} alt="Harris Schneiderman" />
             </div>
           </div>
           <p>
@@ -61,12 +66,13 @@ class App extends Component {
           </p>
         </Slide>
         <Slide>
-          <h2 className='title large'>{'Today we\'re talking about:'}</h2>
-          <ul>
+          <h2 className='text-centered title large'>{'Today we\'re talking about:'}</h2>
+          <img src={freddy} width="250px" style={{position:"absolute", top:"80px"}} alt="Freddy Kreuger likes comboboxes" />
+          <ul className='list-right'>
             <li>Comboboxes</li>
             <li>Collaboration</li>
             <li>Prototyping</li>
-            <li>How much we love ARIA ({'when it\'s necessary!'})</li>
+            <li>ARIA</li>
           </ul>
         </Slide>
         <Slide>
@@ -187,7 +193,8 @@ class App extends Component {
           </div>
         </Slide>
         <ChapterSlide>
-          <h2 className='title large'>Phase 2: Prototypes</h2>
+          <h2 className='chapter-heading title large'>Phase 2: Prototypes</h2>
+          <img src={prototypebg} className='chapter-image' alt="" />
         </ChapterSlide>
         <Slide className='central'>
           <div>
@@ -371,7 +378,8 @@ new Combobo({
           </p>
         </Slide>
         <ChapterSlide>
-          <h2 className='title large'>Phase 3: Usability Testing</h2>
+          <h2 className='chapter-heading title large'>Phase 3: Usability Testing</h2>
+          <img src={testingbg} className="chapter-image" alt="" />
         </ChapterSlide>
         <Slide>
           <Offscreen tag='h3'>
@@ -398,7 +406,8 @@ new Combobo({
           </ul>
         </Slide>
         <ChapterSlide>
-          <h2 className='title large'>Phase 4: Implementation</h2>
+          <h2 className='chapter-heading title large'>Phase 4: Implementation</h2>
+          <img src={implementationbg} className='chapter-image' alt="" />
         </ChapterSlide>
         <Slide>
           <h3 className='title large'>Comboboxes in WorldSpace Assure</h3>
@@ -437,7 +446,8 @@ new Combobo({
           <img src={timeline} width="100%" alt='The process starts with designer working alone. The prototype is started before the design is finished. Once the prototype is working, it can be tested with users. The prototype, testing and implementation phases all overlap. The designer is involved throughout the whole process.' />
         </Slide>
         <ChapterSlide>
-          <h2 className='title large'>Phase 4.5: Pattern Library</h2>
+          <h2 className='chapter-heading title large'>Phase 4.5: Pattern Library</h2>
+          <img src={patternlibbg} className='chapter-image' alt='' />
         </ChapterSlide>
         <Slide className='central'>
           <div>

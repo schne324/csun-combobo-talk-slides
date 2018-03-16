@@ -60,6 +60,12 @@ img.standalone-image.framing {
   width: 100%;
 }
 
+.list-right {
+  margin-left: 270px;
+  margin-top: 60px;
+  font-size: 25px;
+}
+
 .row.space-evenly {
   justify-content: space-evenly;
 }
