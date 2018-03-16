@@ -30,7 +30,7 @@ import implementationbg from './img/implementation-bg.png';
 import patternlibbg from './img/patternlib-bg.png';
 import freddy from './img/freddy.png';
 // import question from './img/question-mark-background.jpg';
-// import focus from './img/focus-styles.png';
+import focus from './img/focus-styles.png';
 // styles
 import './App.css';
 
@@ -273,6 +273,7 @@ const combobo = new Combobo({
                 `}
               </Highlight>
             </h3>
+            <img src={focus} width='300px' alt='active and selected styles in the prototype and the final implementation' />
           </div>
         </Slide>
         <Slide>
