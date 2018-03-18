@@ -31,6 +31,7 @@ import patternlibbg from './img/patternlib-bg.png';
 import freddy from './img/freddy.png';
 // import question from './img/question-mark-background.jpg';
 import focus from './img/focus-styles.png';
+import github from './img/combobo-github-screenshot.png';
 // styles
 import './App.css';
 
@@ -208,7 +209,7 @@ class App extends Component {
         </Slide>
         <Slide className='central'>
           <div>
-            <h2 className='title large'>The value of coded prototypes</h2>
+            <h2 className='title large'>Coded prototype value</h2>
             <ul>
               <li>Screen reader testing early in process</li>
               <li>{'Brought up new questions'}</li>
@@ -273,7 +274,7 @@ const combobo = new Combobo({
                 `}
               </Highlight>
             </h3>
-            <img src={focus} width='300px' alt='active and selected styles in the prototype and the final implementation' />
+            <img src={focus} width='450px' alt='active and selected styles in the prototype and the final implementation' />
           </div>
         </Slide>
         <Slide>
@@ -357,26 +358,26 @@ new Combobo({
           </div>
         </Slide>
         <Slide>
-          <h2 className='title medium'>Did we mention Combobo is open source?</h2>
-          <p>
+          <div className='rest-centered'>
+          <h2 className='text-centered title medium'>BTW: Combobo is open source!</h2>
+          <img className='text-centered' src={github} width="430px" style={{marginTop:'10px'}} alt=''/>
+          <p className='text-centered'>
             <span>{'Try it out: '}</span>
             <a
-              href='https://schne324.github.io/combobo/demo/'
+              href='https://dequelabs.github.io/combobo/demo/'
               target='_blank'
               rel='noopener noreferrer'
             >
               {'interactive demo'}
-            </a>
-          </p>
-          <p>
-            <a
-              href='https://github.com/schne324/combobo'
+            </a>  |  <a
+              href='https://github.com/dequelabs/combobo'
               target='_blank'
               rel='noopener noreferrer'
             >
               Combobo on GitHub
             </a>
           </p>
+          </div>
         </Slide>
         <ChapterSlide>
           <h2 className='chapter-heading title large'>Phase 3: Usability Testing</h2>
@@ -394,12 +395,13 @@ new Combobo({
           />
         </Slide>
         <Slide>
-          <h3 className='title large'>Want to test with screen reader users?</h3>
-          <h4 className='title small'>Code your prototype.</h4>
-          <p>(TODO: image of code in background, white text on top?)</p>
+          <div className='rest-centered'>
+            <h3 className='title small text-centered'>Want to test with screen reader users?</h3>
+            <h4 className='title large text-centered'>Code your prototype.</h4>
+          </div>
         </Slide>
-        <Slide>
-          <h3 className='title large'>How we tested Combobo</h3>
+        <Slide className='central'>
+          <h3 className='title large'>Combobo usability testing</h3>
           <ul>
             <li>4 internal users</li>
             <li>2 screen reader users</li>
@@ -432,15 +434,8 @@ new Combobo({
           />
         </Slide>
         <Slide>
-          <h3 className='title large'>(TODO: link to assure demo and stuff)</h3>
-          <a
-            href='https://assuredev.dequelabs.com/test-run/e9357634-20d1-11e8-a712-87456f647383/issues'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            Assure demo
-          </a>
-          <p>TODO: make a quick video demo as backup for if live demo {'doesn\'t work'}</p>
+          <h3 className='title large'>WorldSpace Assure Demo</h3>
+          <a href="https://youtu.be/DlC4MtVefSE">Demo video</a>
         </Slide>
         <Slide>
           <Offscreen tag='h2'>Revisiting the timeline for designing and building our complex widget</Offscreen>
