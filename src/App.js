@@ -108,7 +108,7 @@ class App extends Component {
         <Slide>
           <div className='text-centered'>
             <h2 className='title large' style={{paddingTop :'65px'}}>Accessibility === difficult</h2>
-            <h3 className='large'>Collaboration === less difficult</h3>
+            <h3 className='title small'>Collaboration === less difficult</h3>
           </div>
           <img src={teamwork} className='bottom-aligned-image' alt='' />
         </Slide>
@@ -180,7 +180,7 @@ class App extends Component {
           />
         </Slide>
         <Slide>
-          <h2 className='title medium'>With Annotations</h2>
+          <h2 className='title medium'>Selected Filters: With Annotations</h2>
           <img
             width='500px'
             src={filters2annot}
@@ -212,7 +212,7 @@ class App extends Component {
             <h2 className='title large'>Coded prototype value</h2>
             <ul>
               <li>Screen reader testing early in process</li>
-              <li>{'Brought up new questions'}</li>
+              <li>{'Brings up new questions'}</li>
               <li>{'Make enhancements without changing application code'}</li>
             </ul>
           </div>
@@ -405,7 +405,7 @@ new Combobo({
           <ul>
             <li>4 internal users</li>
             <li>2 screen reader users</li>
-            <li>Collaboratively!</li>
+            <li>Collaborative!</li>
           </ul>
         </Slide>
         <ChapterSlide>
@@ -413,29 +413,16 @@ new Combobo({
           <img src={implementationbg} className='chapter-image' alt="" />
         </ChapterSlide>
         <Slide>
-          <h3 className='title large'>Comboboxes in WorldSpace Assure</h3>
-          <h4 className='title small'>Assure needed two flavors of combobox:</h4>
-          <ul>
-            <li>Single Select (checkpoint selection)</li>
-            <li>Multi Select (issue filters)</li>
-          </ul>
+          <h3 className='title large'>Two flavors of combobox</h3>
+          <h4 className='title small'>needed for WorldSpace Assure</h4>
+          <ol>
+            <li><strong>Single Select:</strong> checkpoint selection when adding issues</li>
+            <li><strong>Multi Select:</strong> filters on issue list view</li>
+          </ol>
         </Slide>
-        <Slide>
-          <h3 className='title large'>(TODO: screenshots of single select - before)</h3>
-          <p>Note: previous single select was just a standard select element. New single select {'doesn\'t'} look much different, just acts different</p>
-        </Slide>
-        <Slide>
-          <h3 className='title large'>Old Multiselect Filters</h3>
-          <img
-            className='rest-centered'
-            src={oldFilters}
-            width='400px'
-            alt='multiselect filters in WorldSpace Assure circa 2016'
-          />
-        </Slide>
-        <Slide>
+        <Slide className='central'>
           <h3 className='title large'>WorldSpace Assure Demo</h3>
-          <a href="https://youtu.be/DlC4MtVefSE">Demo video</a>
+          <a href="https://youtu.be/DlC4MtVefSE" target="_blank">Demo video</a>
         </Slide>
         <Slide>
           <Offscreen tag='h2'>Revisiting the timeline for designing and building our complex widget</Offscreen>
@@ -452,11 +439,6 @@ new Combobo({
           </div>
         </Slide>
         <Slide className='central'>
-          <div>
-            <h3 className='title large'>Pattern libraries FTW!</h3>
-          </div>
-        </Slide>
-        <Slide>
           <h3 className='title large'>Benefits of pattern libraries</h3>
           <ul>
             <li>DRY</li>
@@ -465,9 +447,13 @@ new Combobo({
             <li>Write less CSS and focus on functionality of app</li>
           </ul>
         </Slide>
-        <Slide>
-          <h3 className='title large'>{'Why isn\'t Combobo in the pattern library?'}</h3>
-          <p>The apple rule...</p>
+        <Slide className='central rest-centered'>
+          <h3 className='title large'>{'"The Apple Rule"'}</h3>
+          <ul>
+            <li>First team builds it.</li>
+            <li>Second team improves it.</li>
+            <li>Third team adds it to the pattern library.</li>
+          </ul>
         </Slide>
         <Slide>
           <Offscreen tag='h3'>Pattern library combobox wireframes</Offscreen>
@@ -476,7 +462,8 @@ new Combobo({
           </div>
         </Slide>
         <Slide>
-          <h3 className='title large'>Deque Pattern Library: Cauldron</h3>
+          <h3 className='title large text-centered'>Cauldron</h3>
+          <h4 className='title small text-centered'>The Deque Pattern Library</h4>
           <div className='text-centered'>
             <img src={cauldronLogo} alt='' width='150px' />
             <div>
