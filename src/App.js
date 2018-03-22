@@ -422,7 +422,13 @@ new Combobo({
         </Slide>
         <Slide className='central'>
           <h3 className='title large'>WorldSpace Assure Demo</h3>
-          <a href="https://youtu.be/DlC4MtVefSE" target="_blank">Demo video</a>
+          <a
+            href="https://youtu.be/DlC4MtVefSE"
+            target="_blank"
+            rel='noopener noreferrer'
+          >
+            Demo video
+          </a>
         </Slide>
         <Slide>
           <Offscreen tag='h2'>Revisiting the timeline for designing and building our complex widget</Offscreen>

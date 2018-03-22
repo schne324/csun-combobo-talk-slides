@@ -3,13 +3,15 @@ import Combobo from 'combobo';
 
 export default class SingleSelect extends Component {
   componentDidMount() {
-    new Combobo({
-      input: '.combobox-multi',
-      list: '.listbox-multi',
-      options: '.opt',
-      optionValue: 'match',
-      multiselect: true
-    });
+    setTimeout(() => {
+      new Combobo({
+        input: '.combobox-multi',
+        list: '.listbox-multi',
+        options: '.opt',
+        optionValue: 'match',
+        multiselect: true
+      });
+    }, 500);
   }
 
   render() {

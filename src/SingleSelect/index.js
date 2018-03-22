@@ -3,7 +3,9 @@ import Combobo from 'combobo';
 
 export default class SingleSelect extends Component {
   componentDidMount() {
-    new Combobo({ optionValue: 'match' });
+    setTimeout(() => {
+      new Combobo({ optionValue: 'match', input: '.combobox' });
+    }, 500);
   }
 
   render() {
